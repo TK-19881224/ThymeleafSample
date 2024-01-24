@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{commons/layout}">
+<head>
+<meta charset="UTF-8">
+<title>ページA</title>
+</head>
+<body>
+	<!-- 置き換わる内容 -->
+	<div layout:fragment="content">
+		<h1>PageA</h1>
+	</div>
+</body>
+</html>
+
+
+【注意】※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+Thymeleaf3では、「layout:decorate=」を使用し、
+Thymeleaf2では、「layout:decorator=」が使用されていました。
+
+参照しているThymeleafのバージョン確認方法は、
+eclipseでは、対象のプロジェクトの「プロジェクトと外部の依存関係」を
+開いていただき、thymeleaf.jarを参照することで確認できます。
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
